@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h4>Q.1.Write the code to access element which is having id as "text"
+    </h4> <pre> let div=document.getElementById("text") 
+
+                  console.log(div.innerText)</pre>
+<div id="text">first div with id</div>
+
+
+<h4>Q.2.Write the code to access element which is having tag as "h1</h4>
+          <pre> let h1=document.getElementsByTagName("h1")[0]
+                
+            console.log(h1.innerText)
+       </pre>
+<h1>h1 with tag name</h1>
+
+<h4> Q.3.Write the code to access element which is having class as "box"</h4>
+     <pre> let italic=document.getElementsByClassName("box")[0]
+        
+           console.log(italic.innerText) </pre>
+<i class="box">italic tag with className</i>
+
+<h4>  Q.4." Hello"  
+     Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h4>
+     <pre>  let h3=document.getElementsByTagName("h3")[0]
+        h3.innerText="Hello World"
+        console.log(h3.innerText)
+     </pre>
+<h3>Hello</h3>
+
+
+<h4> Q.5.Create three cards on HTML page and arrange them using flex property in row or horizontal
+     direction and also create button at the bottom named "Change Flex direction".
+      When user clicks on this button, the cards arrangement should be changed to vertical direction. </h4>
+
+
+<div id="card">
+    <div class="card1">first card</div>
+    <div class="card1">second card</div>
+    <div class="card1">third card</div>
+</div>
+<br>
+<button onclick="func()">Change Flex Direction</button>
+
+<h4>  Q.6.What’s the difference between window vs document? </h4>
+      <p>
+        window object :is the top most object and outermost element of the object, the window objects <br>
+         represents a window /tab containing a DOM document where as document object is property of window <br>
+          object that point to the DOM document loaded in that window <br>
+        document object :each HTML document that gets loaded into a window becomes a document object. <br>
+        the document contains the contents of the pages . using documents object , JavaScript can modify,<br>
+        add and delete the html elements ,attributes CSS styles in the pages 
+      </p>
+<h4>  Q.7."Hello"
+     Add one style attribute and give text color as red and id attribute and give the id value as ""heading""
+      in the above given h1 tag using DOM functions" </h4>
+
+<h1> Hello</h1>
+
+<h4> Q.8.Create an HTML page having content as Hello world and a button named Replace Text.
+      When user will click on this button page content should be changed to "Welcome to Elevation academy"</h4>
+
+<div id="box1">Hello World</div> <br>
+<button id="btn2" onclick="func2()">Replace Text</button>
+
+<h4> Q.9.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should
+      keep updating every second</h4>
+     <span id="HH">HH:</span>
+     <span id="MM">MM:</span>
+     <span id="SS">SS</span>
+    <span id="chg"> </span>
+
+ <h4> Q.10.Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</h4>
+   <div  id="container"> <label for="">Year</label> 
+ <select  id="selection">
+<option disable hidden selected>select</option>
+<option value="2020-2021">2020-2021</option>
+<option value="2021-2022">2021-2022</option>
+<option value="2022-2023">2022-2023</option>
+<option value="2023-2024">2023-2024</option>
+<option value="2024-2025">2024-2025</option>
+
+     </select>
+   <h3  id="result"> Result</h3> 
+    </div>
+
+<h4> Q.11."Create a form having name ,email, phone no. , birth year 
+      Add validations - phone no. should start with 91 , it should be 10 digits
+     email should be domain prepbytes.com
+      birth year should be > 95"</h4>
+      <form action="" name="Registration" >
+    
+            <label for="">name:</label>
+                <input  type="text" placeholder="name" name="" id="" required>  <br><br>
+            <label for="">email:</label>
+                <input id="email" type="email"  placeholder="email" required> <span id="msg1" >Domain should be "@prepbytes.com" only
+                     </span>  <br><br>
+            <label for="">phone no:</label>
+                <input id="phone" type="number" placeholder="phone no." name="" id=""  required>  <span id="msg2">  Phone number should start 
+                    with 91 and must be 10 digits</span> <br><br>
+            <label for="">birth year</label>
+                <input id="year" type="date" placeholder="dd/mm/yyyy" name="" id="" required><span id="msg3"> 
+                    Birth Year should
+                    be greater than 1995</span> <br><br>
+               <br><br>
+               <button type="submit" onclick="validation()">Submit</button> 
+        
+      </form>
+      
+      
+      
+     
+    <script src="./index.js"></script>
+</body>
+</html>

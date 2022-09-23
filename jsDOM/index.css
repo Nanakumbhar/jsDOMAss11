@@ -1,0 +1,29 @@
+#card{
+    height:180px;
+    width:350px;
+    border:1px solid red;
+    display: flex;
+    flex-direction: row;
+}
+.card1{
+    height: 40px;
+    width: 100px;
+    border: 1px solid blue;
+    margin: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#box1{
+    height:50px;
+    width:150px;
+    border: 2px solid red;
+    text-align: center;
+    padding-top: 30px;
+}
+button{
+    background-color: aqua;
+    border-radius: 5px;
+    border: 2px solid blue;
+    box-shadow: 2px 2px solid aquamarine;
+}
